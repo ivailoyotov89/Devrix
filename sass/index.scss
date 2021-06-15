@@ -441,6 +441,7 @@ a > .icon, .btn > .icon{
 		&.flying{
 			position:fixed;
 			top:0;
+			-webkit-backface-visibility: hidden;
 		}
 		
 		.navbar-toggle{
