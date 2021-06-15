@@ -20,10 +20,9 @@
 
 
 
-.container-sm, .container {
-    max-width: 516px;
- }
-
+.container-xs, .container {
+    width: calc(100% - 40px);
+}
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 700px;
