@@ -17,7 +17,7 @@
     src: url('../fonts/sf-pro/SF-Pro-Text-Heavy.otf') format('opentype');
 	font-weight:800;
 }
-@import "grid.scss";
+@import "bootstrap-grid.scss";
 
 
 $mainTextColor: #000;
@@ -32,7 +32,7 @@ body, header, main, footer{
 	font-family: 'SF Pro Text';
 	width:100%;
 	margin:0;
-	padding:0;	
+	padding:0;
 } 
 body, header, main{
 	color:$mainTextColor;
