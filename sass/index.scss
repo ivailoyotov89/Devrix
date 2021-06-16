@@ -263,7 +263,7 @@ a > .icon, .btn > .icon{
 }
 
 .buttons, .project-info{
-	@media (max-width: 575px) {
+	@media(max-width: 575px) {
 		width:100%;
 		text-align:center;
 		
@@ -356,11 +356,23 @@ a > .icon, .btn > .icon{
 			margin-bottom:0;
 		}
 		.articles-boxed .article-wrapper{
-			padding:0 5px 5px 0;
-			@media(max-width: 991px) {
+			padding:0 6px 6px 0;
+			
+			
+			@media (min-width: 576px) and (max-width: 991px) {
 				&:nth-child(even){
 					padding-right:0px;
+					padding-left:3px;
 				}
+				
+				&:nth-child(odd){
+					padding-right:3px;
+					padding-left:0px;
+				}
+			}
+			@media(max-width: 575px) {
+				padding-right:0px;
+				padding-left:0px;
 			}
 			
 			.article-box{

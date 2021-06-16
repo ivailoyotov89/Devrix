@@ -8854,10 +8854,18 @@ a > .icon, .btn > .icon {
   #main .main-middle .article-wrapper {
     margin-bottom: 0; }
   #main .main-middle .articles-boxed .article-wrapper {
-    padding: 0 5px 5px 0; }
-    @media (max-width: 991px) {
+    padding: 0 6px 6px 0; }
+    @media (min-width: 576px) and (max-width: 991px) {
       #main .main-middle .articles-boxed .article-wrapper:nth-child(even) {
-        padding-right: 0px; } }
+        padding-right: 0px;
+        padding-left: 3px; }
+      #main .main-middle .articles-boxed .article-wrapper:nth-child(odd) {
+        padding-right: 3px;
+        padding-left: 0px; } }
+    @media (max-width: 575px) {
+      #main .main-middle .articles-boxed .article-wrapper {
+        padding-right: 0px;
+        padding-left: 0px; } }
     #main .main-middle .articles-boxed .article-wrapper .article-box {
       background: #FFF;
       border: 1px solid #DFDFDF;
